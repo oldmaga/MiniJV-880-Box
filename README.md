@@ -10,6 +10,15 @@ This repository is dedicated to the mechanical and hardware side of the project:
 
 This repository does **not** contain the MiniJV880 software/firmware source code, Roland ROMs, SR-JV80 content, SysEx sound banks, CardRAM images, or any other Roland copyrighted sound material.
 
+
+## Related repositories
+
+- Hardware box / STL files: https://github.com/oldmaga/MiniJV-880-Box
+- Software / CardRAM public source snapshot: https://github.com/oldmaga/MiniJV880-CardRAM-public
+
+This repository contains the hardware box/STL side of the project.  
+The MiniJV880-CardRAM-public repository contains the public-clean software/CardRAM source snapshot.
+
 ## Software
 
 The software/firmware part will be maintained separately.
