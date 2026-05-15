@@ -1,59 +1,96 @@
 # MiniJV-880-Box
-STL files and components
+
+STL files and hardware notes for my personal MiniJV-880 box build.
+
+This repository is dedicated to the mechanical and hardware side of the project:
+
+- printable STL files for the enclosure panels and internal holders;
+- notes about the box, display, DAC, MIDI interface, encoder, buttons, SD extension and rear-panel connectors;
+- general references for the components I used.
+
+This repository does **not** contain the MiniJV880 software/firmware source code, Roland ROMs, SR-JV80 content, SysEx sound banks, CardRAM images, or any other Roland copyrighted sound material.
+
+## Software
+
+The software/firmware part will be maintained separately.
+
+Software repository: **coming soon**.
+
+When available, it will contain only source code, documentation and tools that can be shared safely. It will not include Roland ROM/SR-JV80/SysEx/CardRAM content.
+
+## Hardware notes
 
 Hi everybody,
+
 since someone asked, I thought I'd share files and notes from my very personal version of MiniJV-880 boxing. Please take them as they are: imperfect and largely editable. Think of them as a blueprint for creating your own version, which I'm sure will be a lot better.
+
 Do not hesitate to contact me for any doubts and/or suggestions.
+
 And above all, have fun!
 
+For the project I used a metal box found on AliExpress: 220 x 80 x 195 mm. I replaced the front and rear plastic panels with two specially designed ones, available in the STL folder. I also printed the various supports for the hardware components, which in this case are:
 
-For the project I used a metal box found on AliExpress (220x80x195mm). I replaced the front and rear plastic panels with two specially designed ones (see STL file).  I also printed the various supports for the hardware components, which in this case are:
-
-- display: Surenoo SLC2402A with IIC module
-- DAC: PCM5102 I2S
-- MIDI Shield: a banal Cominmark
-- Rotary encoder: KY-040
+- display: Surenoo SLC2402A with IIC module;
+- DAC: PCM5102 I2S;
+- MIDI Shield: basic Cominmark MIDI Shield;
+- rotary encoder: KY-040;
 - "T" shaped GPIO expansion board.
 
-The Raspberry used (Rpi4) was already inserted in a metal box: its plastic support is designed to keep it adherent to the metal of the box and thus contribute to its cooling without having to install a fan. Be careful, this support is not good if you use an Rpi without a container because it could come into contact with the metal of the box.
+The Raspberry Pi used in this build is an RPi 4 already inserted in a metal case. Its plastic support is designed to keep it close to the metal box, helping cooling without installing a fan.
 
-The front part is equipped with slots for fixing the display and button panel. Unfortunately I couldn't find a ready-made one that I liked so I preferred to make it myself, so the dimensions of the supports and especially of the grid will have to be modified based on the size of the button panel you will use.
+Be careful: this support is not suitable for a bare Raspberry Pi without its own case, because the board could come into contact with the metal box.
 
-I used leftover components from other projects, essentially a perfboard onto which I soldered the buttons. On top of these I applied the writing, then closed with transparent key covers. the holes in the grille are larger than the buttons by about 1 tenth of a millimeter per side (I added below the reference for the buttons used).
-All the buttons have a common terminal connected to ground, so there are 13 wires in total, and from the keyboard they go to a support PCB equipped with a PCB edge connector, mounted above the supports that fix the keyboard to the front panel.
-I used leftover components from other projects, essentially a perfboard onto which I soldered the buttons. On top of these I applied the writing, then closed with transparent key covers. the holes in the grille are larger than the buttons by about 1 tenth of a millimeter per side (I added the reference for the buttons used below).
-All the buttons have a common terminal connected to ground, so there are 13 wires in total, and from the keyboard they go to a support PCB equipped with an edge Connector PCB, mounted above the supports that fix the keyboard to the front panel.
-Finally, on the front panel there are the audio output (3.5 stereo minijack), the hole for the Rotary Encoder and an extension for the SD slot, to conveniently remove the card once the box is closed.
+The front panel includes slots for fixing the display and the button panel. I could not find a ready-made button panel I liked, so I made one myself. For this reason, the support dimensions and especially the button grid will probably need to be adapted to the specific button panel used in your own build.
 
-On the rear panel there are the mini USB (power), a USB (which I mainly use as an additional MIDI connection) and a network socket, plus the three IN, OUT and THRU ports on which I soldered three pieces of MIDI cables, inserting their 5-pin DIN male connectors into the Cominmark sockets.
-To avoid having to make every single connection by hand I simply used extensions cables to connect the Rpi ports to the rear panel: fast, easy and error-proof.
-Again, you will find the references for these extensions at the end; on AliExpress there are hundreds of different models.
+I used leftover components from other projects, essentially a perfboard onto which I soldered the buttons. On top of the buttons I applied the labels, then closed them with transparent key covers. The holes in the grille are about 0.1 mm larger than the buttons on each side.
 
-Finally, I added a link to Sketchup, which I used to draw everything.
-Yes, I know it's not the best for CAD but for my purposes it's good enough... Use it to have an overall reference of the parts. The ones to print are the purple, green and gray ones. The yellow parts are dimensional representations of the box and the components to be housed.
+All buttons have one common terminal connected to ground, so there are 13 wires in total. From the keyboard they go to a support PCB equipped with a PCB edge connector, mounted above the supports that fix the keyboard to the front panel.
 
-Well, that's pretty much it. Let me know if there are any problems.
-Bye
+The front panel also includes:
 
+- the audio output, using a 3.5 mm stereo minijack;
+- the hole for the rotary encoder;
+- an SD-card extension, useful to remove the card after the box is closed.
 
+On the rear panel there are:
 
+- mini USB for power;
+- one USB connector, mainly used as an additional MIDI connection;
+- one network socket;
+- MIDI IN, OUT and THRU ports.
 
-Link to Sketchup Model:
+For the MIDI ports I soldered three pieces of MIDI cable to the Cominmark board and inserted their 5-pin DIN male connectors into the panel sockets.
+
+To avoid making every single connection by hand, I used extension cables to connect the Raspberry Pi ports to the rear panel. This is fast, easy and less error-prone. You will find some search keywords for these parts below; on AliExpress there are many equivalent models.
+
+Finally, I added a link to the SketchUp model I used to draw everything. I know SketchUp is not the best CAD tool, but for my purposes it was good enough. Use the model as an overall reference for the parts.
+
+In the SketchUp model:
+
+- purple, green and gray parts are the parts to print;
+- yellow parts are dimensional references for the box and the components to be housed.
+
+Well, that's pretty much it.
+
+Let me know if there are any problems.
+
+Bye.
+
+## SketchUp model
+
 https://app.sketchup.com/share/tc/europe/rp3Lkhn_vkg?source=web&stoken=tq2dXMXPWeA5VtgYNlE1SekmQYrnYpZajxxdF6qekr3p-wGEgr8Ih1lfUC_PohOD
 
+## Component search keywords
 
-Here some keyword search on AliExpress
+Some useful AliExpress search keywords:
 
-- Box: BDA 40007 -A2-W195, 220x80x195mm
-- Display: Surenoo 242 24X2 2402 LCM
-- Dac: I2S PCM5102A
-- MIDI interface: MIDI Shield
-
-
-- Midi sockets: avssz d-type din conference midi module
-- Audio socket: 22 cm DC3.5mm TRS
-- SD extension: mini sim card extension
-- usb extension: D-type Car Chassis Front USB3.0 Panel Installation
-- Ethernet extension: ethernet cable panel extension
-- Buttons: Microswitch A14 A24
-
+- Box: `BDA 40007 -A2-W195`, 220 x 80 x 195 mm
+- Display: `Surenoo 242 24X2 2402 LCM`
+- DAC: `I2S PCM5102A`
+- MIDI interface: `MIDI Shield`
+- MIDI sockets: `avssz d-type din conference midi module`
+- Audio socket: `22 cm DC3.5mm TRS`
+- SD extension: `mini sim card extension`
+- USB extension: `D-type Car Chassis Front USB3.0 Panel Installation`
+- Ethernet extension: `ethernet cable panel extension`
+- Buttons: `Microswitch A14 A24`
