@@ -21,11 +21,25 @@ The MiniJV880-CardRAM-public repository contains the public-clean software/CardR
 
 ## Software
 
-The software/firmware part will be maintained separately.
+The software/firmware part is maintained separately.
 
-Software repository: **coming soon**.
+Software repository:
 
-When available, it will contain only source code, documentation and tools that can be shared safely. It will not include Roland ROM/SR-JV80/SysEx/CardRAM content.
+https://github.com/oldmaga/MiniJV880-CardRAM-public
+
+The software repository contains a public-clean source snapshot, documentation and tools that can be shared safely.
+
+It does not include:
+
+- Roland JV-880 ROM/NVRAM files
+- SR-JV80 expansion images
+- PN-JV80 SysEx files
+- RD-500 files
+- CardRAM images containing sound data
+- compiled firmware images
+- ready-made SD-card images
+- personal Wi-Fi configuration files
+
 
 ## Hardware notes
 
