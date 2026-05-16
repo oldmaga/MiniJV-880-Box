@@ -1,6 +1,7 @@
 # MiniJV-880-Box
-
 STL files and hardware notes for my personal MiniJV-880 box build.
+
+<img width="1920" height="1080" alt="WhatsApp Image 2026-05-16 at 18 43 58" src="https://github.com/user-attachments/assets/e0f8f6c8-fe35-49dc-b129-ddc66eb776ce" />
 
 This repository is dedicated to the mechanical and hardware side of the project:
 
@@ -38,7 +39,6 @@ It does not include:
 - CardRAM images containing sound data
 - compiled firmware images
 - ready-made SD-card images
-- personal Wi-Fi configuration files
 
 
 ## Hardware notes
@@ -75,12 +75,18 @@ The front panel also includes:
 - the hole for the rotary encoder;
 - an SD-card extension, useful to remove the card after the box is closed.
 
+
+
+
 On the rear panel there are:
+
+<img width="2040" height="1530" alt="WhatsApp Image 2026-05-16 at 18 40 53" src="https://github.com/user-attachments/assets/ceb0c5f2-1787-496b-a62f-951b46a7f953" />
 
 - mini USB for power;
 - one USB connector, mainly used as an additional MIDI connection;
 - one network socket;
-- MIDI IN, OUT and THRU ports.
+- MIDI IN, OUT and THRU ports
+- one mini usb-serial port for logging (last added, not yet in the STL files).
 
 For the MIDI ports I soldered three pieces of MIDI cable to the Cominmark board and inserted their 5-pin DIN male connectors into the panel sockets.
 
@@ -105,7 +111,7 @@ https://app.sketchup.com/share/tc/europe/rp3Lkhn_vkg?source=web&stoken=tq2dXMXPW
 
 ## Component search keywords
 
-Some useful AliExpress search keywords:
+Some useful AliExpress/Amazon search keywords:
 
 - Box: `BDA 40007 -A2-W195`, 220 x 80 x 195 mm
 - Display: `Surenoo 242 24X2 2402 LCM`
@@ -117,3 +123,5 @@ Some useful AliExpress search keywords:
 - USB extension: `D-type Car Chassis Front USB3.0 Panel Installation`
 - Ethernet extension: `ethernet cable panel extension`
 - Buttons: `Microswitch A14 A24`
+- Log system:  Mini-USB serial adapter FTDI FT232-AZ
+  
