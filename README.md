@@ -124,4 +124,9 @@ Some useful AliExpress/Amazon search keywords:
 - Ethernet extension: `ethernet cable panel extension`
 - Buttons: `Microswitch A14 A24`
 - Log system:  Mini-USB serial adapter FTDI FT232-AZ
+- Extension Cable Mini USB 2.0 Male to Mini USB B Female, Panel Mount
+
+NOTE: The following are not (yet) present in the SketchUp model:
+- housing for the mini USB B Female socket (rear panel)
+- support for the FTDI FT232-AZ Mini-USB serial adapter (housed internally)
   
