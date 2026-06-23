@@ -59,6 +59,17 @@ For the project I used a metal box found on AliExpress: 220 x 80 x 195 mm. I rep
 - rotary encoder: KY-040;
 - "T" shaped GPIO expansion board.
 
+
+## Arduino MIDI Shield at 3.3 V
+
+The Arduino MIDI Shield used in this build requires specific power and resistor modifications when operated from the Raspberry Pi 3.3 V supply.
+
+The modification includes important safety precautions, tested resistor values for MIDI OUT and MIDI THRU, and a warning that the 6N138 optoisolator must first be verified at 3.3 V.
+
+See the complete guide:
+
+[Arduino MIDI Shield: 3.3 V modification](docs/arduino-midi-shield-3v3.md)
+
 The Raspberry Pi used in this build is an RPi 4 already inserted in a metal case. Its plastic support is designed to keep it close to the metal box, helping cooling without installing a fan.
 
 Be careful: this support is not suitable for a bare Raspberry Pi without its own case, because the board could come into contact with the metal box.
